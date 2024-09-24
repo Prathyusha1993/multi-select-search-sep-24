@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +35,76 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.user-search-container {
+  /* display: flex; */
+  position: relative;
+  /* justify-content: center; */
+}
+
+.user-search-input {
+  /* display: flex; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 20px;  
+}
+ 
+.user-search-input input {
+  border: none;
+  height: 20px;
+  padding: 5px;
+}
+
+.user-search-input input:focus {
+  outline: none;
+}
+
+.suggestions-list {
+  max-height: 300px;;
+  overflow-y: scroll;
+  list-style: none;
+  padding: 0;
+  margin-top: 140px;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.suggestions-list li {
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.suggestions-list li:last-child {
+  border-bottom: none;
+}
+
+.suggestions-list li img {
+  height: 20px;
+}
+
+.user-pill {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: black;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.user-pill img {
+  height: 100%;
 }
